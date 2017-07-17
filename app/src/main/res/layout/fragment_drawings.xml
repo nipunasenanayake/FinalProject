@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.finalproject.edu.gsu.httpscs.finalproject.fragment.CheckListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/fragment_drawings_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Check List"
+        android:background="@color/grayWhite"
+        android:textColor="@android:color/white"
+        android:textSize="40dp"
+        android:src="@drawable/drawings"
+        />
+
+</FrameLayout>

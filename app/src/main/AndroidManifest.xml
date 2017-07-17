@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gsu.httpscs.finalproject">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pic1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="edu.gsu.httpscs.finalproject.MVCView"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.MVCView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.MVCSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.MVCViewReminder">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.MVCViewReminder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.MVCViewReminderEdit" />
+        <activity android:name="edu.gsu.httpscs.finalproject.Gesture.GestureActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.Gesture.GestureActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.DrawingActivityCanvas">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.DrawingActivityCanvas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.DrawingActivityImage" />
+        <activity android:name="edu.gsu.httpscs.finalproject.alarm.AlarmActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.alarm.AlarmActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+
+        <receiver android:name="edu.gsu.httpscs.finalproject.alarm.AlarmReceiver" />
+
+        <activity android:name="edu.gsu.httpscs.finalproject.PasswordManagerLoginActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.PasswordManagerLoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.PasswordmanagerContentActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.PasswordmanagerContentActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.TimerActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.TimerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.gsu.httpscs.finalproject.LocationActivity">
+            <intent-filter>
+                <action android:name="edu.gsu.httpscs.finalproject.LocationActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:name="edu.gsu.httpscs.finalproject.service.BackgroundSoundService" />
+    </application>
+
+</manifest>

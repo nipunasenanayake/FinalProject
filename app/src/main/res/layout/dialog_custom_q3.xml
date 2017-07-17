@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="320dp">
+
+    <TextView
+        android:id="@+id/dialog_custom_tv_q3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Want to Exit?"
+        android:textSize="30dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/q3_radio_group"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <RadioButton
+            android:id="@+id/q3_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Stay"
+            />
+
+
+        <RadioButton
+            android:id="@+id/q3_rb3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Exit"
+            />
+
+    </RadioGroup>
+    </LinearLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/stop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-10dp"
+        >
+
+    <Button
+        android:id="@+id/q3_Cancel"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:text="Cancel"
+        />
+
+    <Button
+        android:id="@+id/q3_ok"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:layout_height="match_parent"
+        android:text="OK"
+
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gsu.httpscs.finalproject.edu.gsu.httpscs.finalproject.alarm.AlarmActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20px"
+            android:orientation="vertical">
+
+
+            <DatePicker
+                android:id="@+id/alarm_date_picker"
+                style="@style/date_picker_theme"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:datePickerMode="spinner"
+                android:background="@android:color/white"></DatePicker>
+
+            <TimePicker
+                android:id="@+id/alarm_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="200dp"
+                android:timePickerMode="spinner"
+                android:background="@android:color/white"></TimePicker>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/alarm_set_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Set Alarm" />
+
+            <Button
+                android:id="@+id/alarm_stop_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Stop Alarm" />
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/alarm_repeat_cb"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight=".5"-->
+            <!--android:layout_height="match_parent" />-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Repeat each"/>-->
+            <!--<EditText-->
+            <!--android:id="@+id/alarm_repeat_et"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Minute(s)"/>-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
